@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===desktop first approach=== */
+/* default */
+.container {
+  max-width: 1280px;
+  margin: 50px auto;
+  background-color: aliceblue;
+  padding: 50px;
+}
+/* NOTE: in case of mix order no matter*/
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .container {
+    background-color: green;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 999px) {
+  .container {
+    background-color: orange;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 799px) {
+  .container {
+    background-color: red;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 399px) {
+  .container {
+    background-color: blue;
+  }
+}

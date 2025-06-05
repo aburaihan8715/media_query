@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===mobile first approach=== */
+/* default */
+.container {
+  width: 100%;
+  margin: 50px auto;
+  background-color: aliceblue;
+  padding: 50px;
+}
+
+@media (min-width: 400px) {
+  .container {
+    background-color: red;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    background-color: orange;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    background-color: green;
+  }
+}

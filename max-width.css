@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===desktop first approach=== */
+/* default */
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  background-color: aliceblue;
+  padding: 50px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    background-color: green;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    background-color: orange;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    background-color: blue;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    background-color: red;
+  }
+}
